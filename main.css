@@ -1,0 +1,46 @@
+
+
+body{
+      background-color: rgb(219, 219, 219);
+      padding: 25px;
+      margin: 50px
+      
+}
+
+h1   {color: blue;
+      font-family: calibri;
+      font-size: 300%;
+
+}
+
+
+p    {color: black;
+
+
+}
+
+div {
+}
+
+#dropper{
+
+
+      float: right;
+}
+
+#navbarSupportedContent{
+
+
+      box-align: right;
+}
+
+#divonnav{
+      text-align: right;
+      padding-left: 30px;
+      box-align: right;
+}
+
+#topnav{
+
+      background-color: greenyellow;
+}
