@@ -1,61 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Latitude Data Proj - Summary</title>
+<!-- Regular CSS local file link -->
       <link rel="stylesheet" href="main.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Linking Bootstrap css -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
+
 <body>
 
-            <nav class="navbar navbar-expand-lg navbar navbar-right bg-light" id="topnav">
-                        <h1>Index</h1>
-                        <div id="divonnav" style="float: right">
-                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="navbar-nav mr-auto navbar-right">
-                            <li class="nav-item active">
-                              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="data.html">Data used</a>
-                            </li>
-                            
-                            <li class="nav-item dropdown dropdown-menu-right">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Plots
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="visualizations_max_temp.html">Max Temp</a>
-                                <a class="dropdown-item" href="visualizations_cloudiness.html">Cloudiness</a>
-                                <a class="dropdown-item" href="visualizations_humidity.html">Humidity</a>
-                                <a class="dropdown-item" href="visualizations_wind_speed.html">Wind speed</a>
-                              </div>
-      
-                            </li>
-                          </ul>
-                        </div>
+
+<!-- Linking JS script -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+      </script>
+
+      <nav class="navbar justify-content-center navbar-expand-lg navbar bg-light" id="topnav">
+            <h1>Index</h1>
+
+<!-- Center this in navbar -->
+            <div>
+                  <div class="collapse justify-content-center navbar-collapse center" id="navbarSupportedContent">
+                        <ul class="nav justify-content-center">
+                              <li id="leftmain" class="nav-item justify-content-center">
+                                    <a class="nav-link" href="index.html">Home <span
+                                                class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item justify-content-center">
+                                    <a class="nav-link" href="comparisons.html">Comparisons</a>
+                              </li>
+                              <li class="nav-item justify-content-center">
+                                    <a class="nav-link" href="data.html">Data used</a>
+                              </li>
+
+                              <li class="nav-item dropdown justify-content-center">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Plots
+                                    </a>
+<!-- dropdown-menu-right <---- CODE IF NEEDED -->
+                                    <div class="dropdown-menu justify-content-center" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="visualizations_max_temp.html">Max Temp</a>
+                                          <a class="dropdown-item" href="visualizations_cloudiness.html">Cloudiness</a>
+                                          <a class="dropdown-item" href="visualizations_humidity.html">Humidity</a>
+                                          <a class="dropdown-item" href="visualizations_wind_speed.html">Wind speed</a>
+                                    </div>
+
+                              </li>
+                        </ul>
                   </div>
-                      </nav>
-            
+            </div>
 
-            <img src="output_data/Fig1.png" alt="plot_max_temp" height="" width="" class="rounded-sm">
 
-            <p>The purpose of this project is to visualize how weather changes when the latitude approaches the equator.
-                  Specifically, my visualizations observe maximum temperature, humidity, cloudiness, and wind speed.
-            </p>
 
-            <!-- <br> -->
+      </nav>
+      <br>
 
-            <p>The tools used in this project are OpenWeatherMap API and Matplotlib. Above you will find links to the source data collection
-                  of over 500 cities and their respective latitude/longitude coordinates.
-            </p>
+<!-- Graph vis -->
+      <img src="output_data/Fig1.png" alt="plot_max_temp" height="" width="" class="rounded-sm">
+      <br><br>
+      <br>
+
+<!-- Explanatory para -->
+      <p id="mainpar">The purpose of this project is to visualize how weather changes when the latitude approaches the equator.
+            Specifically, my visualizations observe maximum temperature, humidity, cloudiness, and wind speed.
+      The tools used in this project are OpenWeatherMap API and Matplotlib. Above you will find links to the source
+            data collection
+            of over 500 cities and their respective latitude/longitude coordinates.
+      </p>
 
       </div>
 </body>
-</html>
 
+</html>

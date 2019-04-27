@@ -19,28 +19,37 @@ p    {color: black;
 
 }
 
-div {
-}
+/* div {
+} */
 
-#dropper{
+/* #dropper{
 
 
       float: right;
-}
+} */
 
-#navbarSupportedContent{
-
-
+/* #navbarSupportedContent{
       box-align: right;
-}
+} */
 
 #divonnav{
-      text-align: right;
-      padding-left: 30px;
-      box-align: right;
+      /* text-align: right; */
+      position: center;
+      top: 100px;
+      /* box-align: right; */
 }
 
 #topnav{
 
       background-color: greenyellow;
+}
+
+#mainpar {
+      padding-left: 55px;
+      padding-right: 250px;
+}
+
+#leftmain {
+      padding-left: 40px;
+      /* padding-right: 250px; */
 }
